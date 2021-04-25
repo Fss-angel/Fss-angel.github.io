@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>ssh-key-Generate a new SSH Key | [Fss-angel] (https://github.com/Fss-angel/Fss-angel.github.io.git)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ssh-keygen-Generate a new SSH KeyWhate is ssh-keygen?Ssh-keygen 是为SSH创建新的认证密钥对的工具，这样的密钥对用于自动登录，单点登录和主机认证。 The simplest way to generate a key pair1ssh-keygen choosing an Algorithm and key size rsa dsa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ssh-key-Generate a new SSH Key">
+<meta property="og:url" content="http://fss-angel.top/2021/03/20/ssh-keygen/index.html">
+<meta property="og:site_name" content="[Fss-angel] (https:&#x2F;&#x2F;github.com&#x2F;Fss-angel&#x2F;Fss-angel.github.io.git)">
+<meta property="og:description" content="ssh-keygen-Generate a new SSH KeyWhate is ssh-keygen?Ssh-keygen 是为SSH创建新的认证密钥对的工具，这样的密钥对用于自动登录，单点登录和主机认证。 The simplest way to generate a key pair1ssh-keygen choosing an Algorithm and key size rsa dsa">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-03-20T01:04:44.232Z">
+<meta property="article:modified_time" content="2021-03-20T01:12:09.848Z">
+<meta property="article:author" content="FSS-ANGEL">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="[Fss-angel] (https://github.com/Fss-angel/Fss-angel.github.io.git)" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">[Fss-angel] (https://github.com/Fss-angel/Fss-angel.github.io.git)</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://Fss-angel.top"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-ssh-keygen" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/03/20/ssh-keygen/" class="article-date">
+  <time class="dt-published" datetime="2021-03-20T01:04:44.232Z" itemprop="datePublished">2021-03-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      ssh-key-Generate a new SSH Key
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="ssh-keygen-Generate-a-new-SSH-Key"><a href="#ssh-keygen-Generate-a-new-SSH-Key" class="headerlink" title="ssh-keygen-Generate a new SSH Key"></a>ssh-keygen-Generate a new SSH Key</h1><h1 id="Whate-is-ssh-keygen"><a href="#Whate-is-ssh-keygen" class="headerlink" title="Whate is ssh-keygen?"></a>Whate is ssh-keygen?</h1><p>Ssh-keygen 是为SSH创建新的认证密钥对的工具，这样的密钥对用于自动登录，单点登录和主机认证。</p>
+<h2 id="The-simplest-way-to-generate-a-key-pair"><a href="#The-simplest-way-to-generate-a-key-pair" class="headerlink" title="The simplest way to generate a key pair"></a>The simplest way to generate a key pair</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
+<h3 id="choosing-an-Algorithm-and-key-size"><a href="#choosing-an-Algorithm-and-key-size" class="headerlink" title="choosing an Algorithm and key size"></a>choosing an Algorithm and key size</h3><ul>
+<li>rsa</li>
+<li>dsa</li>
+<li>ecdsa</li>
+<li>ed25519</li>
+</ul>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">用 -t选择算法,用 -b确定键的大小</span><br><span class="line">ssh-keygen -t rsa -b <span class="number">4096</span></span><br></pre></td></tr></table></figure>
+<h4 id="Specifying-the-File-Name"><a href="#Specifying-the-File-Name" class="headerlink" title="Specifying the File Name"></a>Specifying the File Name</h4><p>用 -f<finename>指定文件</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -f ./tatu-key-rsa -t ras -b <span class="number">521</span></span><br></pre></td></tr></table></figure>
+<h1 id="Command-and-Option-S"><a href="#Command-and-Option-S" class="headerlink" title="Command and Option S"></a>Command and Option S</h1><p><strong>-e</strong> “Export” This option allows reformatting of existing keys between the OpenSSH key file format and the format documented in RFC 4716, “SSH Public Key File Format”.</p>
+<p><strong>-p</strong> “Change the passphrase” This option allows changing the passphrase of a private key file with [-P old_passphrase] and [-N new_passphrase], [-f keyfile].</p>
+<p><strong>-t</strong> “Type” This option specifies the type of key to be created. Commonly used values are: - rsa for RSA keys - dsa for DSA keys - ecdsa for elliptic curve DSA keys</p>
+<p><strong>-i</strong> “Input” When ssh-keygen is required to access an existing key, this option designates the file.</p>
+<p><strong>-f</strong> “File” Specifies name of the file in which to store the created key.</p>
+<p><strong>-N</strong> “New” Provides a new passphrase for the key.</p>
+<p><strong>-P</strong> “Passphrase” Provides the (old) passphrase when reading a key.</p>
+<p><strong>-c</strong> “Comment” Changes the comment for a keyfile.</p>
+<p><strong>-p</strong> Change the passphrase of a private key file.</p>
+<p><strong>-q</strong> Silence ssh-keygen.</p>
+<p><strong>-v</strong> Verbose mode.</p>
+<p><strong>-l</strong> “Fingerprint” Print the fingerprint of the specified public key.</p>
+<p><strong>-B</strong> “Bubble babble” Shows a “bubble babble” (Tectia format) fingerprint of a keyfile.</p>
+<p><strong>-F</strong> Search for a specified hostname in a known_hosts file.</p>
+<p><strong>-R</strong> Remove all keys belonging to a hostname from a known_hosts file.</p>
+<p><strong>-y</strong> Read a private OpenSSH format file and print an OpenSSH public key to stdout.</p>
+<p>This only listed the most commonly used options. For full usage, including the more exotic and special-purpose options, use the man ssh-keygen command.ummary</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fss-angel.top/2021/03/20/ssh-keygen/" data-id="ckmoqbunl0003gko20uup2hdj" data-title="ssh-key-Generate a new SSH Key" class="article-share-link">Teilen</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/03/22/C%E4%B8%AD%E9%A2%84%E7%BC%96%E8%AF%91%E5%AE%8F/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          C中预编译宏
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/03/18/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/03/24/vscode-set-get-executionPolicy/">vscode set/get-executionPolicy</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/22/C%E4%B8%AD%E9%A2%84%E7%BC%96%E8%AF%91%E5%AE%8F/">C中预编译宏</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/20/ssh-keygen/">ssh-key-Generate a new SSH Key</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/18/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/18/Markdown-cheatsheet/">Markdown cheatsheet</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 FSS-ANGEL<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>[Fss-angel] (https://github.com/Fss-angel/Fss-angel.github.io.git)</title>
+  <title>C中预编译宏 | [Fss-angel] (https://github.com/Fss-angel/Fss-angel.github.io.git)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="[Fss-angel] (https:&#x2F;&#x2F;github.com&#x2F;Fss-angel&#x2F;Fss-angel.github.io.git)">
-<meta property="og:url" content="http://fss-angel.top/index.html">
+  <meta name="description" content="(一) 预处理命令简介注意: 函数宏对参数类型是不敏感的, 你不必考虑将何种数据类型传递给宏. 那么, 如何构建对参数类型敏感的宏呢? 参考本章的第九部分, 关于”##”的介绍. 关于定义宏的另外一些问题 (1) 宏可以被多次定义, 前提是这些定义必须是相同的. 这里的”相同”要求先后定义中空白符出现的位置相同, 但具体的空白符类型或数量可不同, 比如原先的空格可替换为多个其他类型的空白符: 可为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C中预编译宏">
+<meta property="og:url" content="http://fss-angel.top/2021/03/22/C%E4%B8%AD%E9%A2%84%E7%BC%96%E8%AF%91%E5%AE%8F/index.html">
 <meta property="og:site_name" content="[Fss-angel] (https:&#x2F;&#x2F;github.com&#x2F;Fss-angel&#x2F;Fss-angel.github.io.git)">
+<meta property="og:description" content="(一) 预处理命令简介注意: 函数宏对参数类型是不敏感的, 你不必考虑将何种数据类型传递给宏. 那么, 如何构建对参数类型敏感的宏呢? 参考本章的第九部分, 关于”##”的介绍. 关于定义宏的另外一些问题 (1) 宏可以被多次定义, 前提是这些定义必须是相同的. 这里的”相同”要求先后定义中空白符出现的位置相同, 但具体的空白符类型或数量可不同, 比如原先的空格可替换为多个其他类型的空白符: 可为">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-03-22T08:10:36.000Z">
+<meta property="article:modified_time" content="2021-03-22T09:00:27.073Z">
 <meta property="article:author" content="FSS-ANGEL">
 <meta name="twitter:card" content="summary">
   
@@ -69,52 +73,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-vscode-set-get-executionPolicy" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/24/vscode-set-get-executionPolicy/" class="article-date">
-  <time class="dt-published" datetime="2021-03-24T00:38:21.000Z" itemprop="datePublished">2021-03-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/24/vscode-set-get-executionPolicy/">vscode set/get-executionPolicy</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>检测get-ExecutionPolicy 状态</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get-ExecutionPolicy</span><br></pre></td></tr></table></figure>
-<p>如果禁止状态</p>
-<p>设置set-ExecutionPolicy</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set-ExecutionPolicy RemoteSigned</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fss-angel.top/2021/03/24/vscode-set-get-executionPolicy/" data-id="ckmoqbunm0004gko2aselbveo" data-title="vscode set/get-executionPolicy" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-C中预编译宏" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-C中预编译宏" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/03/22/C%E4%B8%AD%E9%A2%84%E7%BC%96%E8%AF%91%E5%AE%8F/" class="article-date">
   <time class="dt-published" datetime="2021-03-22T08:10:36.000Z" itemprop="datePublished">2021-03-22</time>
@@ -127,8 +86,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/22/C%E4%B8%AD%E9%A2%84%E7%BC%96%E8%AF%91%E5%AE%8F/">C中预编译宏</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      C中预编译宏
     </h1>
   
 
@@ -244,218 +203,28 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-ssh-keygen" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/20/ssh-keygen/" class="article-date">
-  <time class="dt-published" datetime="2021-03-20T01:04:44.232Z" itemprop="datePublished">2021-03-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2021/03/24/vscode-set-get-executionPolicy/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
         
+          vscode set/get-executionPolicy
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/20/ssh-keygen/">ssh-key-Generate a new SSH Key</a>
-    </h1>
   
+    <a href="/2021/03/20/ssh-keygen/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">ssh-key-Generate a new SSH Key</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="ssh-keygen-Generate-a-new-SSH-Key"><a href="#ssh-keygen-Generate-a-new-SSH-Key" class="headerlink" title="ssh-keygen-Generate a new SSH Key"></a>ssh-keygen-Generate a new SSH Key</h1><h1 id="Whate-is-ssh-keygen"><a href="#Whate-is-ssh-keygen" class="headerlink" title="Whate is ssh-keygen?"></a>Whate is ssh-keygen?</h1><p>Ssh-keygen 是为SSH创建新的认证密钥对的工具，这样的密钥对用于自动登录，单点登录和主机认证。</p>
-<h2 id="The-simplest-way-to-generate-a-key-pair"><a href="#The-simplest-way-to-generate-a-key-pair" class="headerlink" title="The simplest way to generate a key pair"></a>The simplest way to generate a key pair</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
-<h3 id="choosing-an-Algorithm-and-key-size"><a href="#choosing-an-Algorithm-and-key-size" class="headerlink" title="choosing an Algorithm and key size"></a>choosing an Algorithm and key size</h3><ul>
-<li>rsa</li>
-<li>dsa</li>
-<li>ecdsa</li>
-<li>ed25519</li>
-</ul>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">用 -t选择算法,用 -b确定键的大小</span><br><span class="line">ssh-keygen -t rsa -b <span class="number">4096</span></span><br></pre></td></tr></table></figure>
-<h4 id="Specifying-the-File-Name"><a href="#Specifying-the-File-Name" class="headerlink" title="Specifying the File Name"></a>Specifying the File Name</h4><p>用 -f<finename>指定文件</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -f ./tatu-key-rsa -t ras -b <span class="number">521</span></span><br></pre></td></tr></table></figure>
-<h1 id="Command-and-Option-S"><a href="#Command-and-Option-S" class="headerlink" title="Command and Option S"></a>Command and Option S</h1><p><strong>-e</strong> “Export” This option allows reformatting of existing keys between the OpenSSH key file format and the format documented in RFC 4716, “SSH Public Key File Format”.</p>
-<p><strong>-p</strong> “Change the passphrase” This option allows changing the passphrase of a private key file with [-P old_passphrase] and [-N new_passphrase], [-f keyfile].</p>
-<p><strong>-t</strong> “Type” This option specifies the type of key to be created. Commonly used values are: - rsa for RSA keys - dsa for DSA keys - ecdsa for elliptic curve DSA keys</p>
-<p><strong>-i</strong> “Input” When ssh-keygen is required to access an existing key, this option designates the file.</p>
-<p><strong>-f</strong> “File” Specifies name of the file in which to store the created key.</p>
-<p><strong>-N</strong> “New” Provides a new passphrase for the key.</p>
-<p><strong>-P</strong> “Passphrase” Provides the (old) passphrase when reading a key.</p>
-<p><strong>-c</strong> “Comment” Changes the comment for a keyfile.</p>
-<p><strong>-p</strong> Change the passphrase of a private key file.</p>
-<p><strong>-q</strong> Silence ssh-keygen.</p>
-<p><strong>-v</strong> Verbose mode.</p>
-<p><strong>-l</strong> “Fingerprint” Print the fingerprint of the specified public key.</p>
-<p><strong>-B</strong> “Bubble babble” Shows a “bubble babble” (Tectia format) fingerprint of a keyfile.</p>
-<p><strong>-F</strong> Search for a specified hostname in a known_hosts file.</p>
-<p><strong>-R</strong> Remove all keys belonging to a hostname from a known_hosts file.</p>
-<p><strong>-y</strong> Read a private OpenSSH format file and print an OpenSSH public key to stdout.</p>
-<p>This only listed the most commonly used options. For full usage, including the more exotic and special-purpose options, use the man ssh-keygen command.ummary</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fss-angel.top/2021/03/20/ssh-keygen/" data-id="ckmoqbunl0003gko20uup2hdj" data-title="ssh-key-Generate a new SSH Key" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/18/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-03-18T13:05:04.292Z" itemprop="datePublished">2021-03-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/18/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fss-angel.top/2021/03/18/hello-world/" data-id="ckmoqbunk0002gko2ggavbclc" data-title="Hello World" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Markdown-cheatsheet" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/18/Markdown-cheatsheet/" class="article-date">
-  <time class="dt-published" datetime="2021-03-18T12:49:06.000Z" itemprop="datePublished">2021-03-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/18/Markdown-cheatsheet/">Markdown cheatsheet</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h2 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a><a href="#Headers">Headers</a></h2><h2 id="Anchor"><a href="#Anchor" class="headerlink" title="Anchor"></a><a href="#Anchor">Anchor</a></h2><h2 id="images"><a href="#images" class="headerlink" title="images"></a><a href="#images">images</a></h2><h1 id="Headers-1"><a href="#Headers-1" class="headerlink" title="Headers"></a>Headers</h1><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line">...</span><br><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="Anchor-1"><a href="#Anchor-1" class="headerlink" title="Anchor"></a>Anchor</h1><p>  网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。</p>
-<p>  <strong>语法描述：</strong><br>在你准备跳转到的指定标题后插入锚点&#123;#标记&#125;，然后在文档的其它地方写上连接到锚点的链接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">## 目录</span><br><span class="line"></span><br><span class="line">跳转[目录](#目录)</span><br></pre></td></tr></table></figure>
-
-<h1 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h1><h2 id="插入本地图片"><a href="#插入本地图片" class="headerlink" title="插入本地图片"></a>插入本地图片</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">  只需要在基础语法的括号中填入图片的位置路径即可，支持绝对路径和相对路径。</span><br><span class="line">例如：</span><br></pre></td></tr></table></figure>
-<p>  !<a href="/home/picture/1.png">alt text</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 插入网络图片</span><br><span class="line">  只需要在基础语法的括号中填入图片的网络链接即可，现在已经有很多免费&#x2F;收费图床和方便传图的小工具可选。</span><br><span class="line">例如：</span><br></pre></td></tr></table></figure>
-<p>  !<a target="_blank" rel="noopener" href="https://baidu.com/pic/doge.png">alt text</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 把图片嵌入Markdown文件中</span><br></pre></td></tr></table></figure>
-<p>  ![alt text][base64str]<br>  [base64str]:data:image/png;base64,iV…</p>
-<pre><code>
-</code></pre>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fss-angel.top/2021/03/18/Markdown-cheatsheet/" data-id="ckmoqbunh0001gko240n63mde" data-title="Markdown cheatsheet" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Learn-random-module-in-python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/18/Learn-random-module-in-python/" class="article-date">
-  <time class="dt-published" datetime="2021-03-18T09:04:28.000Z" itemprop="datePublished">2021-03-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/18/Learn-random-module-in-python/">Learn random module in python</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fss-angel.top/2021/03/18/Learn-random-module-in-python/" data-id="ckmoqbunb0000gko2e653e9c9" data-title="Learn random module in python" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
